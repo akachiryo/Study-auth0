@@ -7,3 +7,6 @@
   <p>新規登録は <%= link_to "こちら", signup_path %></p>
   <p>ログインは <%= link_to "こちら", login_path %></p>
 <% end %>
+
+<h1>Auth0接続確認</h1>
+<%= button_to 'Login', '/auth/auth0', method: :post, data: { turbo: false } %>
